@@ -27,6 +27,9 @@
 .text-blue {
 	color: hsl(209, 33%, 12%);
 }
+.text-red {
+	color: red;
+}
 
 .inputs > input,
 .inputs > button {
@@ -35,7 +38,7 @@
 	margin: 0.5em auto;
 	padding: 1em;
 	box-sizing: border-box;
-	border-radius: 20px;
+	border-radius: 50em;
 }
 
 .inputs > input {
@@ -46,6 +49,10 @@
 	border: none;
 	background-color: hsl(223, 87%, 63%);
 	color: white;
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 .icon {

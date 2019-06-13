@@ -11,6 +11,7 @@
 			href="./images/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script src="app.js" defer></script>
 		<title>FM | Ping coming soon page</title>
 	</head>
 	<body>
@@ -22,15 +23,13 @@
 				<span class="text-gray">We are launching</span> <b>soon!</b>
 			</p>
 			<p>Subscribe and get notified</p>
-			<div>
-				<form class="inputs">
-					<input
-						name="usr-email"
-						type="email"
-						placeholder="Your email address..."
-					/>
-					<button type="submit">Notify Me</button>
-				</form>
+			<div class="inputs">
+				<input
+					name="usr-email"
+					id="user-email"
+					placeholder="Your email address..."
+				/>
+				<button onclick="validate()">Notify Me</button>
 			</div>
 			<div class="img-container">
 				<img src="./images/illustration-dashboard.png" />
