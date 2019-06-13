@@ -5,3 +5,28 @@
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
+
+.container {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.inputs > input,
+.inputs > button {
+	width: 100%;
+	display: block;
+	margin: 0.5em auto;
+	padding: 0.5em;
+	box-sizing: border-box;
+}
+
+.img-container {
+	height: 100%;
+	width: 100%;
+	margin: 1em auto;
+}
+
+.img-container > img {
+	width: 100%;
+}
