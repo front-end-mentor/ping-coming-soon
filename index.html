@@ -16,23 +16,35 @@
 	<body>
 		<div class="container">
 			<p id="ping" class="text-bigger">
-				<b>PING<span id="text-blu e">.</span></b>
+				<b>PING<span class="text-blue">.</span></b>
 			</p>
 			<p class="text-bigger">
 				<span class="text-gray">We are launching</span> <b>soon!</b>
 			</p>
 			<p>Subscribe and get notified</p>
-			<div class="inputs">
-				<input name="usr-email" placeholder="Your email address..." />
-				<button>Notify Me</button>
+			<div>
+				<form class="inputs">
+					<input
+						name="usr-email"
+						type="email"
+						placeholder="Your email address..."
+					/>
+					<button type="submit">Notify Me</button>
+				</form>
 			</div>
 			<div class="img-container">
 				<img src="./images/illustration-dashboard.png" />
 			</div>
 			<div class="icon-container">
-				<img src="images/logo-facebook.svg" />
-				<img src="images/logo-twitter.svg" />
-				<img src="images/logo-instagram.svg" />
+				<a target="_blank" href="https://www.facebook.com/"
+					><img class="icon" src="images/logo-facebook.svg"
+				/></a>
+				<a target="_blank" href="https://twitter.com/"
+					><img class="icon" src="images/logo-twitter.svg"
+				/></a>
+				<a target="_blank" href="https://www.instagram.com/"
+					><img class="icon" src="images/logo-instagram.svg"
+				/></a>
 			</div>
 
 			<p class="text-gray">&copy; Copyright Ping. All rights reserved.</p>

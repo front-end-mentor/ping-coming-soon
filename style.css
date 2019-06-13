@@ -24,10 +24,13 @@
 .text-gray {
 	color: hsl(0, 0%, 59%);
 }
+.text-blue {
+	color: hsl(209, 33%, 12%);
+}
 
 .inputs > input,
 .inputs > button {
-	width: 100%;
+	width: 90%;
 	display: block;
 	margin: 0.5em auto;
 	padding: 1em;
@@ -45,7 +48,7 @@
 	color: white;
 }
 
-.icon-container > img {
+.icon {
 	height: 25px;
 	border: 1px solid lightgray;
 	border-radius: 100%;
