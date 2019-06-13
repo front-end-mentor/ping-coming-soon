@@ -71,3 +71,22 @@ button:hover {
 .img-container > img {
 	width: 100%;
 }
+
+@media only screen and (min-width: 450px) {
+	.inputs {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	.inputs > input,
+	.inputs > button {
+		display: inline;
+		margin: 0.5em;
+	}
+	.inputs > input {
+		width: 60%;
+	}
+
+	.inputs > button {
+		width: 30%;
+	}
+}
