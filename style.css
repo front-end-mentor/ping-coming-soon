@@ -1,3 +1,8 @@
+@font-face {
+	font-family: libreFranklin;
+	src: url("https://fonts.google.com/specimen/Libre+Franklin.eot");
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
@@ -17,7 +22,7 @@
 }
 
 .text-gray {
-	color: gray;
+	color: hsl(0, 0%, 59%);
 }
 
 .inputs > input,
@@ -25,7 +30,7 @@
 	width: 100%;
 	display: block;
 	margin: 0.5em auto;
-	padding: 0.5em;
+	padding: 1em;
 	box-sizing: border-box;
 	border-radius: 20px;
 }
@@ -36,6 +41,15 @@
 
 .inputs > button {
 	border: none;
+	background-color: hsl(223, 87%, 63%);
+	color: white;
+}
+
+.icon-container > img {
+	height: 25px;
+	border: 1px solid lightgray;
+	border-radius: 100%;
+	padding: 7px;
 }
 
 .img-container {
