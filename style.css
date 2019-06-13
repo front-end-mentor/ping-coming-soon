@@ -12,6 +12,14 @@
 	margin: 0 auto;
 }
 
+.text-bigger {
+	font-size: 1.3em;
+}
+
+.text-gray {
+	color: gray;
+}
+
 .inputs > input,
 .inputs > button {
 	width: 100%;
@@ -19,6 +27,15 @@
 	margin: 0.5em auto;
 	padding: 0.5em;
 	box-sizing: border-box;
+	border-radius: 20px;
+}
+
+.inputs > input {
+	border: 1px solid lightgray;
+}
+
+.inputs > button {
+	border: none;
 }
 
 .img-container {
