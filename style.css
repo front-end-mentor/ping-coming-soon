@@ -31,6 +31,10 @@
 	color: red;
 }
 
+.border-red {
+	border: 1px solid red;
+}
+
 .inputs > input,
 .inputs > button {
 	width: 90%;
@@ -39,10 +43,6 @@
 	padding: 1em;
 	box-sizing: border-box;
 	border-radius: 50em;
-}
-
-.inputs > input {
-	border: 1px solid lightgray;
 }
 
 .inputs > button {
@@ -55,9 +55,13 @@ button:hover {
 	cursor: pointer;
 }
 
+.inputs > input,
+.icon {
+	border: 1px solid lightgray;
+}
+
 .icon {
 	height: 25px;
-	border: 1px solid lightgray;
 	border-radius: 100%;
 	padding: 7px;
 }
