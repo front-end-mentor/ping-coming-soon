@@ -35,8 +35,13 @@
 	border: 1px solid red;
 }
 
-.inputs > input,
-.inputs > button {
+form.inputs {
+	display: flex;
+    flex-direction: column;
+}
+
+.inputs input,
+.inputs button {
 	width: 90%;
 	display: block;
 	margin: 0.5em auto;
@@ -45,7 +50,34 @@
 	border-radius: 50em;
 }
 
-.inputs > button {
+form.inputs > #user-email-container {
+	transition-duration: 0.5s;
+	transition-property: overflow;
+	max-height: 3.5em;
+	overflow: hidden;
+}
+
+form.inputs:invalid > #user-email-container {
+	transition-duration: 0.5s;
+	transition-property: overflow;
+	overflow: visible;
+}
+
+#user-email:invalid {
+	border: 1px solid red;
+	color: red;
+}
+
+form.inputs > #user-email {
+	color: #999;
+}
+
+#message {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+.inputs button {
 	border: none;
 	background-color: hsl(223, 87%, 63%);
 	color: white;
@@ -55,7 +87,7 @@ button:hover {
 	cursor: pointer;
 }
 
-.inputs > input,
+.inputs input,
 .icon {
 	border: 1px solid lightgray;
 }
@@ -77,20 +109,22 @@ button:hover {
 }
 
 @media only screen and (min-width: 450px) {
-	.inputs {
+	form.inputs {
 		max-width: 500px;
 		margin: 0 auto;
-	}
-	.inputs > input,
-	.inputs > button {
-		display: inline;
-		margin: 0.5em;
-	}
-	.inputs > input {
-		width: 60%;
+		flex-direction:row;
+		margin-bottom: 3em;
 	}
 
-	.inputs > button {
-		width: 30%;
+	#user-email-container {
+		flex-grow: 2;
+	}
+	
+	#submit-container {
+		flex-grow:1;
+	}
+
+	.inputs:nth-child(0) {
+		color: yellow;
 	}
 }
